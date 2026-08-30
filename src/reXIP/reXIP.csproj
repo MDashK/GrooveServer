@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>reXIP</AssemblyName>
+    <RootNamespace>ReXip</RootNamespace>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <!--
+    O codigo do formato e da linha de comandos vive no GrooveServer e e' incluido daqui por
+    referencia, nao copiado: sao os mesmos ficheiros, compilados duas vezes. Assim uma
+    correccao no formato chega aos dois executaveis sem ninguem se lembrar de a repetir.
+  -->
+  <ItemGroup>
+    <Compile Include="..\GrooveServer\Pak\*.cs" LinkBase="Pak" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

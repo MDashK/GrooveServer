@@ -1,0 +1,67 @@
+# Courses do DJMAX Online — que musicas toca cada um.
+#
+# GERADO a partir de System\courseclub\CourseSection.ini, extraido do system.pak com o
+# unxip (ADHSoft/Xip-Pak-Extractor). As chaves do extractor sairam do DUMP DE MEMORIA do
+# cliente (re\djmax_dump.bin) — o executavel em disco esta' protegido com ASProtect e nao
+# as da'. Sao as do cliente chines (key1a_ch / key1b_ch).
+#
+# Formato:   indice <TAB> nome <TAB> musica:dificuldade ...  <TAB> # nomes das musicas
+#
+#   indice       o que o cliente envia no cabecalho[3..4]
+#   dificuldade  0=EASY  1=NORMAL  2=HARD  3=MX  4=SC
+#
+# BASE 0 vs BASE 1: o .ini conta courses, musicas e dificuldades a partir de 1; a rede
+# conta a partir de 0. Aqui esta' tudo ja' convertido para a rede. Validado contra as
+# capturas: o .ini diz que o Step by Step e' 32,13,66 e a captura deu 31,12,65.
+#
+# As dificuldades vem do proprio jogo (campo Songdiff), nao sao presumidas.
+#
+# O ficheiro tem 43 courses; a conta so' ve' os que tem desbloqueados.
+0	Let's Begin	126:0 123:0 55:0	preco=100	max=50	disco=1056	item=62465,30	item=62721,20	precisao=80,1	pontos=0,1	breaks=0,1	combo=0,1	# 微风祈愿, 美丽晨光, Jupiter_Driving	exp=0
+1	Step by Step	31:0 12:0 65:0	preco=100	max=60	disco=1056	item=62465,30	item=62721,20	precisao=80,1	pontos=540000,1	breaks=0,1	combo=0,1	# Elastic_Star, Can_We_Talk, MASAI	exp=0
+2	Feel So Good	63:0 96:0 75:1	preco=100	max=70	disco=1056	item=62465,30	item=62721,20	precisao=80,1	pontos=0,1	breaks=0,1	combo=400,1	# Long_Vacation, Save_My_Dream, Never_Say	exp=0
+3	Emotional Sound	105:0 35:0 44:1	preco=100	max=70	disco=1056	item=62465,20	item=62721,15	item=62593,15	precisao=80,1	pontos=580000,1	breaks=10,0	combo=0,1	# Sunny_side, Eternal_Memory_(少女的梦), FTR	exp=0
+4	Colors	76:0 53:0 86:1	preco=100	max=70	disco=1056	item=62465,20	item=62721,15	item=62593,15	precisao=80,1	pontos=0,1	breaks=0,1	combo=500,1	# Oblivion, Hypersonic, Red	exp=0
+5	Excite	57:0 128:0 162:1 9:1	preco=200	max=70	disco=1056	item=62465,20	item=62721,15	item=62593,15	precisao=90,1	pontos=760000,1	breaks=0,1	combo=0,1	# KUDA, 仲夏夜之梦, MY_NAME, Bright_Dream	exp=0
+6	Dreams come true	20:0 25:0 46:1 27:1	preco=220	max=70	disco=1057	item=62465,20	item=62721,15	item=62593,15	precisao=80,1	pontos=0,1	breaks=20,0	combo=0,1	# Chrono_Breakers, Damascus, Futurism, Detonator	exp=30
+7	Yo! MAX!	120:0 21:1 103:1 1:1 118:2	preco=150	max=80	disco=1058	item=62465,20	item=62721,15	item=62593,15	precisao=85,1	pontos=0,1	breaks=0,1	combo=500,1	# 钢琴协奏曲第1号, CnP, Starfish, A_．I, Yo_Creo_Que_Si	exp=20
+8	Classic Land -1-	125:1 121:1 120:1	preco=150	max=100	disco=1057	item=62465,20	item=62721,5	item=62593,20	precisao=80,1	pontos=0,1	breaks=0,1	combo=0,1	# 土耳其进行曲, 葛莫扎特40号交响曲第一章, 钢琴协奏曲第1号	exp=0
+9	Low pressure	19:1 88:1 99:1	preco=100	max=100	disco=1057	item=62465,20	item=62721,15	item=62593,15	precisao=80,1	pontos=600000,1	breaks=0,1	combo=0,1	# Cherokee, Revenge, SIN	exp=30
+10	Baby, Baby!	30:1 64:1 77:2	preco=300	max=200	disco=1057	item=62465,20	item=62721,25	item=62466,5	precisao=90,1	pontos=600000,1	breaks=0,1	combo=0,1	# Elastic_Star, Luv_Flow, ON	exp=0
+11	Challenge	45:2 110:1 55:2	preco=100	max=150	disco=1057	item=62465,20	item=62721,25	item=62466,5	precisao=94,1	pontos=0,1	breaks=0,1	combo=800,1	# Funky_Chups, Triple_Zoe, Jupiter_Driving	exp=0
+12	Initial E	34:1 33:2 36:2 35:2	preco=200	max=200	disco=1057	item=62465,20	item=62721,30	item=62466,5	precisao=90,1	pontos=0,1	breaks=0,1	combo=0,1	# Enemy_storm, End_of_the_Moonlight, Extreme_Z4, Eternal_Memory_(少女的梦)	exp=0
+13	Go LEFT!!	32:2 65:2 27:2	preco=300	max=300	disco=1057	item=62593,20	item=62721,15	item=62466,15	precisao=90,1	pontos=0,1	breaks=0,1	combo=1400,1	# Electro_Sensibility, MASAI, Detonator	exp=0
+14	Run&Fly	18:1 48:2 53:1 111:2	preco=300	max=400	disco=1058	item=62721,50	item=62722,10	item=62723,5	precisao=90,1	pontos=940000,1	breaks=0,1	combo=0,1	# Chase_575, Getup, Hypersonic, Urban_Night	exp=0
+15	DJMAX Best	54:2 76:2 105:2 74:2	preco=300	max=400	disco=1059	item=62465,60	item=62566,10	item=62467,5	precisao=80,1	pontos=1000000,1	breaks=0,1	combo=0,1	# JBG, Oblivion, Sunny_side, NB_Ranger	exp=0
+16	Ray o Beach	84:2 25:2 36:2	preco=300	max=400	disco=1058	item=62465,25	item=62721,25	precisao=95,1	pontos=0,1	breaks=0,1	combo=0,1	# Ray_of_Illuminati, Damascus, Extreme_Z4	exp=0
+17	Shooting Star	79:2 23:2 62:2 101:2	preco=300	max=400	disco=1058	item=62465,25	item=62977,25	precisao=0,1	pontos=960000,1	breaks=0,1	combo=0,1	# One_The_Love, Cosmic_Elevator, Living_on_The_Beat, Space_of_Soul	exp=0
+18	Sweet Revolt	69:2 15:2 60:2 31:2 99:4	preco=300	max=400	disco=1059	item=62466,10	item=62721,30	item=62977,20	precisao=80,1	pontos=0,1	breaks=0,1	combo=1500,1	# miles, Catch_Me, Let`s_Go_Baby, Elastic_Star, SIN	exp=0
+19	Nien ROD	20:2 91:2 90:2	preco=300	max=300	disco=1058	item=62466,10	item=62722,10	item=62977,30	precisao=90,1	pontos=700000,1	breaks=0,1	combo=0,1	# Chrono_Breakers, Rock_or_Die, Road_of_Death	exp=30
+20	TARI	84:2 63:2 136:2 44:2 86:2 9:2 103:2 58:2	preco=400	max=500	disco=1060	item=62467,5	item=62595,5	item=62977,25	item=62849,15	item=62978,5	precisao=90,1	pontos=2000000,1	breaks=5,0	combo=0,1	# Ray_of_Illuminati, Long_Vacation, ANGEL, FTR, Red, Bright_Dream, Starfish, Lemonade	exp=0
+21	ECO	65:2 110:2 6:1 61:2 165:2 27:2 32:2 107:2	preco=350	max=500	disco=1060	item=62467,5	item=62595,5	item=62977,25	item=62849,15	item=62950,5	precisao=90,1	pontos=2200000,1	breaks=0,1	combo=0,1	# MASAI, Triple_Zoe, Astro_Fight, Light_House, Rain, Detonator, Electro_Sensibility, Tammuz	exp=0
+22	Danger Zone	1:2 2:2 84:2 75:4 105:2	preco=300	max=400	disco=1059	item=62722,10	item=62594,10	item=62849,10	item=62465,50	precisao=98,1	pontos=0,1	breaks=0,1	combo=0,1	# A_．I, Again_Sunshine, Ray_of_Illuminati, Never_Say, Sunny_side	exp=100
+23	Crush!	110:2 6:2 58:2 90:2 80:4 76:4 84:4	preco=700	max=2000	disco=1067	item=62723,10	item=62595,10	item=62850,10	item=62978,10	item=62722,30	item=62466,30	precisao=80,1	pontos=0,1	breaks=0,1	combo=875,1	# Triple_Zoe, Astro_Fight, Lemonade, Sweet_Love, Road_of_Death, Out_Law, Oblivion, Ray_of_Illuminati	exp=1000
+24	Fine Day	10:0 23:0 123:1	preco=50	max=30	disco=1056	item=62721,10	item=62593,10	precisao=80,1	pontos=0,1	breaks=0,1	combo=0,1	# Bright_Dream, Cosmic_Elevator, 美丽晨光	exp=0
+25	Gloomy Day	77:0 75:1 80:1	preco=100	max=50	disco=1056	item=62721,10	item=62593,10	precisao=80,1	pontos=0,1	breaks=0,1	combo=0,1	# ON, Never_Say, Out_Law	exp=0
+26	Wind Day	126:1 105:1 44:1	preco=150	max=100	disco=1056	item=62721,10	item=62593,10	item=62465,10	precisao=90,1	pontos=0,1	breaks=10,0	combo=0,1	# 微风祈愿, Sunny_side, FTR	exp=0
+27	Rain Day	150:1 12:1 74:2	preco=180	max=80	disco=1057	item=62721,10	item=62593,10	item=62849,3	precisao=90,1	pontos=0,1	breaks=0,1	combo=500,1	# ela(bajo_de_la_luna), Can_We_Talk, NB_Ranger	exp=20
+28	Shower Day	33:4 84:4 76:4 69:4	preco=800	max=1500	disco=1066	item=62595,10	item=62851,20	item=62979,50	item=1053,20	precisao=96,1	pontos=0,1	breaks=10,0	combo=2000,1	# End_of_the_Moonlight, Ray_of_Illuminati, Oblivion, miles	exp=1500
+29	Cloud Day	35:2 199:2 37:2	preco=200	max=100	disco=1057	item=62721,10	item=62593,10	item=62465,10	item=1053,1	precisao=90,1	pontos=0,1	breaks=0,1	combo=0,1	# Eternal_Memory_(少女的梦), 梦见, FallenAngel	exp=0
+30	M2U	149:2 35:2 74:2 101:2 9:2 58:2 66:2 98:2	preco=500	max=700	disco=1060	item=62467,5	item=62723,5	item=62977,20	item=62849,10	item=62978,5	item=1053,2	precisao=95,1	pontos=0,1	breaks=15,0	combo=3000,1	# Disco_Time, Eternal_Memory_(少女的梦), NB_Ranger, Space_of_Soul, Bright_Dream, Lemonade, Memory_of_Beach, Seeker	exp=0
+31	Storm Day	19:2 193:2 165:2 34:4	preco=250	max=300	disco=1058	item=62466,10	item=62722,10	item=62977,30	item=1053,1	precisao=90,1	pontos=0,1	breaks=15,0	combo=3000,1	# Cherokee, 暴风雪山, Rain, Enemy_storm	exp=30
+32	Red Story	99:1 110:1 86:2	preco=400	max=200	disco=1057	item=62721,20	item=62593,20	item=62466,10	item=1053,1	precisao=90,1	pontos=0,1	breaks=0,1	combo=0,1	# SIN, Triple_Zoe, Red	exp=0
+33	Orange Message	119:1 15:2 79:2	preco=200	max=150	disco=1058	item=62722,15	item=62594,15	item=62466,10	item=62849,10	item=1053,1	precisao=98,1	pontos=0,1	breaks=0,1	combo=0,1	# Yomax, Catch_Me, One_The_Love	exp=0
+34	Yellow Funky	117:2 32:2 58:2	preco=300	max=200	disco=1058	item=62721,30	item=62593,20	item=62466,20	item=62849,10	item=1053,1	precisao=90,1	pontos=0,1	breaks=10,0	combo=0,1	# Yellowberry, Electro_Sensibility, Lemonade	exp=10
+35	Green Life	190:2 70:2 69:2 19:3	preco=300	max=200	disco=1058	item=62721,30	item=62593,20	item=62466,20	item=62849,10	item=1053,1	precisao=80,1	pontos=1020000,1	breaks=0,1	combo=0,1	# 动物嘉年华, Minimal_Life, miles, Cherokee	exp=0
+36	Blue MX	1:3 105:3 84:3	preco=400	max=400	disco=1058	item=62722,10	item=62594,10	item=62466,10	item=62849,20	item=62978,5	item=1053,1	precisao=90,1	pontos=900000,1	breaks=0,1	combo=1000,1	# A_．I, Sunny_side, Ray_of_Illuminati	exp=50
+37	Indigo Style	36:2 65:2 76:4	preco=300	max=300	disco=1058	item=62722,10	item=62594,10	item=62466,10	item=62849,20	item=62978,5	item=1053,1	precisao=94,1	pontos=800000,1	breaks=0,1	combo=1000,1	# Extreme_Z4, MASAI, Oblivion	exp=50
+38	Violet MAX	203:2 103:2 124:2 90:2 98:2	preco=500	max=500	disco=1059	item=62722,10	item=62594,10	item=62466,10	item=62978,5	item=62465,50	item=1053,1	precisao=92,1	pontos=0,1	breaks=10,0	combo=3000,1	# 蜜蜂女王, Starfish, 四季-夏_第三乐章, Road_of_Death, Seeker	exp=0
+39	Croove	65:2 54:2 105:2 48:2 86:2 34:4 80:4	preco=600	max=500	disco=1062	item=62722,10	item=62594,10	item=62466,10	item=62978,5	item=62465,50	item=1053,5	precisao=94,1	pontos=0,1	breaks=0,1	combo=4000,1	# MASAI, JBG, Sunny_side, Getup, Red, Enemy_storm, Out_Law	exp=100
+40	Enjoy! DJMAX!	210:0 148:0 197:1 196:1 199:2	preco=150	max=100	disco=1057	item=62465,20	item=62722,10	item=62593,10	item=2065,2	precisao=95,1	pontos=0,1	breaks=0,1	combo=1667,1	# 预感, Disco_King, 情感, 蝗虫, 梦见, 电话号码	exp=0
+41	COOL! KOOL!	53:2 70:2 111:2 17:2 1:2 21:2	preco=250	max=300	disco=1058	item=62465,50	item=62466,10	item=62467,5	item=2065,2	precisao=95,1	pontos=1500000,1	breaks=0,1	combo=2500,1	# Hypersonic, Minimal_Life, Urban_Night, Chains_of_Gravity, A_．I, CnP	exp=0
+42	Fire!	12:3 65:3 91:3 86:3 74:3	preco=500	max=800	disco=1067	item=62723,10	item=62595,10	item=62850,10	item=62978,10	item=62722,30	item=2065,2	precisao=98,1	pontos=0,1	breaks=0,1	combo=3750,1	# Can_We_Talk, MASAI, Rock_or_Die, Sweet, Red, NB_Ranger	exp=100
+43	NG	56:2 46:2 35:2 57:2	preco=250	max=200	disco=1060	item=62467,5	item=62723,5	item=62977,20	item=62849,10	item=2065,2	precisao=97,1	pontos=0,1	breaks=5,0	combo=0,1	# Knowledge_system, Futurism, 游泳, Eternal_Memory_(少女的梦), KUDA	exp=50
+44	Mechanic Flame	96:2 84:2 32:2 27:2 90:2	preco=200	max=150	disco=1057	item=62465,20	item=62722,10	item=62593,10	item=2065,2	precisao=90,1	pontos=0,1	breaks=0,1	combo=0,1	# Save_My_Dream, Ray_of_Illuminati, Electro_Sensibility, Detonator, Road_of_Death	exp=0
+45	Classic Land -2-	13:2 94:2 128:2 14:2	preco=200	max=150	disco=1058	item=62465,20	item=62722,10	item=62977,5	item=2065,2	precisao=95,1	pontos=0,1	breaks=0,1	combo=2000,1	# Carmen_Fantasy, Russian_Dance, 仲夏夜之梦, Carmen_Toreador	exp=0
+46	Forte Escape	126:1 96:2 45:2 31:2 36:2 12:2 109:2 15:2 33:2 115:2 113:2 46:2 32:2 0:2 107:2 23:2 1:2 62:2 2:2 117:2 18:2 116:2 56:2 110:2 81:1 6:2	preco=1500	max=250	disco=1063	item=62465,10	item=62722,10	item=1053,40	item=2065,40	precisao=0,1	pontos=0,1	breaks=0,1	combo=10000,1	# 微风祈愿, Save_My_Dream, Funky_Chups, Elastic_Star, Extreme_Z4, Can_We_Talk, Too_Fast, Catch_Me, End_of_the_Moonlight, WeirdPistol, V-BOB, Futurism, Electro_Sensibility, 1st-sync, Tammuz, Cosmic_Elevator, A_．I, Living_on_The_Beat, Again_Sunshine, Yellowberry, Chase_575, Ya!_Party!, Knowledge_system, Triple_Zoe, Para_Q, Astro_Fight	exp=50
+47	December Story	101:1 128:1 90:2 42:2	preco=200	max=0	disco=1062	item=62465,20	item=62722,10	item=62593,10	item=2065,2	precisao=90,1	pontos=1000000,1	breaks=0,1	combo=0,1	# Space_of_Soul, 仲夏夜之梦, Road_of_Death, For_Seasons	exp=0

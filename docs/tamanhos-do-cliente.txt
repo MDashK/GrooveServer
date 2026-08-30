@@ -1,0 +1,141 @@
+# Tamanhos das mensagens SERVIDOR -> CLIENTE, lidos do proprio cliente.
+#
+# EXTRAIDOS do dump de memoria (re/djmax_dump.bin), de um array de u32 indexado pelo message
+# id, na base 0x374eec. Nao foi preciso adivinhar: procurou-se uma base onde o indice 0x45
+# valesse 953 (o tamanho do 0x0045, que ja' estava medido) e testaram-se os outros 34 que
+# tambem estavam.
+#
+# VALIDACAO, tres coisas independentes:
+#   - 32 dos 35 tamanhos medidos em captura batem exactamente;
+#   - as tres que "nao batem" valem 0xFFFFFFFF, que e' a marca de TAMANHO VARIAVEL — e as
+#     tres que ja' sabiamos ser variaveis (0x0020, 0x0082, 0x007A) tambem la' estao assim;
+#   - os ids que o cliente ENVIA (0x0004, 0x0011, 0x006C, 0x0083, ...) valem todos ZERO, que
+#     e' o que se espera de uma tabela do lado de quem RECEBE.
+#
+# Isto substitui a deducao por captura: ja' nao e' preciso apanhar uma mensagem isolada num
+# segmento TCP para lhe saber o tamanho.
+#
+# id	tamanho	nome (do docs/protocolo-mensagens.md)
+0x0001	variavel	
+0x0003	3	OnPingTestInf
+0x0007	3	OnAliveReq
+0x0008	13	OnDisconnectPeerInf
+0x000a	47	**OnConnectAck** — entrega a chave de sessão no offset 7
+0x000b	variavel	OnChannelInfoInf
+0x000c	variavel	OnPeerCountInf
+0x0010	92	OnAuthenticateInAck
+0x0012	20	OnAuthenticateInSNDEKeyReq
+0x0014	11	OnAuthenticateInSNDRPWDReq
+0x0016	15	OnKeepAuthenticateInAck
+0x0018	13	OnLogOutAck
+0x001a	47	**OnLogInAck** — status 0x2B = sucesso; rechaveia com 32B no offset 9
+0x001e	11	OnUserInfoResNotFound
+0x001f	892	OnUserInfoAck
+0x0020	variavel	OnUserIDInfoInf
+0x0022	variavel	OnUserIDInfoAck
+0x0024	25	OnUpdateUserIconInf
+0x0025	73	OnUpdateUserPropertyInf
+0x0026	25	OnUpdateUserPropertyLevelInf
+0x0027	21	OnUpdateUserPropertyMoneyInf
+0x0028	29	OnUpdateUserPropertyRecordInf
+0x0029	49	OnUpdateUserPropertyMISCInf
+0x002a	199	OnUpdateUserInventoryDefaultItemInf
+0x002b	135	OnUpdateUserInventoryEventItemInf
+0x002c	247	OnUpdateUserInventoryShopItemInf
+0x002d	71	OnUpdateUserInventoryMountItemInf
+0x002e	127	OnUpdateUserInventoryPresentItemInf
+0x002f	19	OnUpdateUserAccountClassInf
+0x0031	13	OnUpdateUserAccountNickAck
+0x0033	13	OnUpdateUserProfileAck
+0x0035	12	
+0x0037	variavel	OnWChatInf
+0x0039	variavel	OnChatInf
+0x003a	51	OnRoomInfoUpdateInf
+0x003b	13	OnRoomInfoEraseInf
+0x003c	76	OnWaiterInfoUpdateInf
+0x003d	17	OnWaiterInfoEraseInf
+0x003f	11	
+0x0040	11	OnJoinerListStart
+0x0041	135	OnJoinerListEnt
+0x0042	11	OnJoinerListEnd
+0x0043	138	OnUserInfoInf
+0x0044	751	OnInventoryInfoInf
+0x0045	953	OnMessengerInfoInf
+0x0047	15	**OnJoinRoomAck**
+0x0048	11	OnPostJoinRoomInf
+0x004d	52	**OnCreateRoomAck**
+0x0050	48	OnRoomDescInf
+0x0051	135	
+0x0054	13	
+0x0055	12	
+0x0059	13	OnTeamControlInf
+0x005b	12	OnGameTypeInf
+0x005e	18	OnReadyInf
+0x0060	14	**OnStartInf**
+0x0061	13	OnJoinEventInf
+0x0063	15	OnEventInfoInf
+0x0065	11	**OnPlayStartInf**
+0x0068	11	OnPlaySkipInf
+0x006b	12	OnPlayOverInf
+0x006d	23	OnPlayStateInf
+0x0070	51	OnStageResultExInf
+0x0071	15	OnCheckDataReq
+0x0074	12	OnLeaveRoomAck
+0x0077	17	**OnChangeDiscInf** — troca de música
+0x0078	19	OnAwardInfoInf
+0x007a	variavel	OnGameInfoInf
+0x007c	12	OnLoadCompleteInf
+0x0082	variavel	OnCourseListInf
+0x0084	2155	OnCourseRankAck
+0x0086	13	OnChangeCourseAck
+0x0088	13	OnContinueCourseAck
+0x0089	19	OnPostCourseItemReq
+0x008c	15	OnAwardItemInf
+0x0097	357	OnBigNewsInf
+0x009a	12	
+0x009d	51	OnRoomChangeInfoAck
+0x00a1	12	
+0x00a2	24	
+0x00a7	12	
+0x00ad	8	
+0x00ae	4	
+0x00af	2	
+0x00b0	9	
+0x00b1	2	
+0x00b3	11	OnCRItemInf
+0x00b5	11	
+0x00b6	15	
+0x00b8	11	
+0x00b9	14	
+0x00bb	3	
+0x00bc	24	
+0x00bd	15	
+0x00be	103	
+0x00c0	22	OnMissionStandItemInf
+0x00c4	36	
+0x00c6	20	
+0x00c9	70	OnUseMountItemInf
+0x00ca	20	OnStartParameterInf
+0x00d2	35	OnBillingAuthInf
+0x00d3	33	OnGameStartInf
+0x00d4	36	OnUserAlertInf
+0x00d8	69	OnMountItemAck
+0x00da	365	OnGetPresentItemAck
+0x00dc	245	OnDeleteItemAck
+0x00de	253	OnPurchaseItemAck
+0x00e0	249	OnResaleItemAck
+0x00e4	131	
+0x00e5	483	
+0x00e6	15	OnAlertCreditInf
+0x00f1	17	OnMsgNotifyInf
+0x00f3	13	OnMsgRegisterUserAck
+0x00f4	483	OnMsgRegUserInf
+0x00f5	243	OnMsgBlkUserInf
+0x00f6	233	OnMsgGroupInf
+0x00fb	variavel	
+0x00fc	319	**OnEnvironmentInf** — config; observado com `MIX_FILTER` e `EZ;NM;HD;MX;SC`
+0x00fe	69	OnSystemInfoAck
+0x010e	variavel	OnCipherCommandInf
+0x012d	16	OnUBSAccountAuthenResAck
+0x012e	variavel	OnUBSAwardInfoInf
+0x0130	5	OnUBSAwardAuthenAck
