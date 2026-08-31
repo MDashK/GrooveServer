@@ -56,7 +56,7 @@ messages before they go out. Everything else is served as captured.
   the game displays
 - The bonus every effector and speed mode is worth
 - **An optional PAK archive that puts the client's text in English**, opens every song, chart
-  and course from the start, and restores the client's disabled generic background animation —
+  and course from the start, and makes every item existent (avatar, gear, notes) accessible in the store, for free, including regional locked ones —
   see [The English patch](#the-english-patch)
 
 Chart coverage:
@@ -120,9 +120,9 @@ with micro-transactions:
 - It is also the one that the private online server uses.
 - **English PAK** is already present in the ZIP.
 
-| Mirror 1 | Mirror 2 |
-|---|---|
-| [IceDrive](https://icedrive.net/s/NgT7f5jVhVhxiAFT25zRV6kvi2fT)  | [Google Drive](https://drive.google.com/file/d/1g8IN3tHSsWIt9_Ab5Ne3SgxGUPEa0Ygy/view) | 
+| Mirror 1 | Mirror 2 | Mirror 3 |
+|---|---|---|
+| [IceDrive](https://icedrive.net/s/NgT7f5jVhVhxiAFT25zRV6kvi2fT)  | [Google Drive](https://drive.google.com/file/d/1g8IN3tHSsWIt9_Ab5Ne3SgxGUPEa0Ygy/view) | [Mega](https://mega.nz/file/sp8xnTqb#iHTkyuGTkfoKo5K4DgbjP19Cz1swOAZIhLqQa9D7CXE)
 
 
 **For the older clients below, please also check the [Compatibility with other older client versions](#Compatibility-with-other-older-client-versions) section.**
@@ -136,7 +136,7 @@ with micro-transactions:
 
 | Mirror 1 | Mirror 2 |
 |---|---|
-| [Uploading]()  | [Uploading]() | 
+| [Mega](https://mega.nz/file/pgdgEY5K#vMTgHp5XoRNTF0KGUilWuMKoBO9qbQ1cEWlyhmE-vJQ)  | [IceDrive](https://icedrive.net/s/tNC5wZYXN1TGuw4wVNZ8ji1vaTXD) | 
 
 **DJMax Online SNDA v2.50 / v2.60**
 - Compared to the above clients, it only has a few musics.
@@ -146,7 +146,7 @@ with micro-transactions:
 
 | v2.50 | v2.60 |
 |---|---|
-| [Uploading]()  | [Uploading]() | 
+| [Mega](https://mega.nz/file/oh9gBbYQ#11iEx0VHnUPx_KVgyVchkfQn42Fp-LtXtzMWG4AJRzU)  | [Mega](https://mega.nz/file/Ih1EnZZJ#_Nai5iIWkTDcEdOnm8oeuu_oZnjfQVilkrQF2-KnZQY) | 
 
 **HOLD "CTRL" KEY AT START-UP TO ACCESS THE SETTINGS WINDOW.**
 
@@ -290,13 +290,12 @@ dotnet test tests/GrooveServer.Tests
 | `src/GrooveServer/` | The server. `Protocol/` is the message layouts, `Net/` the session logic, `Crypto/` the cipher, `Pak/` the client's archive format, `Tools/` the analysis commands |
 | `src/reXIP/` | The standalone `.pak` packer. Compiles the same `Pak/` sources into its own executable |
 | `tests/GrooveServer.Tests/` | Cipher validation and protocol layout tests, all against real captured bytes |
-| `docs/` | Protocol notes, size tables, and the open-questions list |
+| `docs/` | Protocol notes, size tables |
 | `gravacoes/` | The recorded sessions the server replays. **Required at runtime** |
 | `gravacoes/extra/` | Recordings not used at runtime, kept for analysis |
 | `songs/5k`, `songs/7k` | Chart data per song and channel, harvested from the recordings. **Required at runtime** |
 | `dados/` | Everything else the server reads. **Required at runtime** |
-| `dados/courses.txt`, `dados/itens.txt` | Course and shop-item tables, generated from the client's own data files |
-| `dados/DiscStock.csv` and friends | Client data files, extracted from the `.pak` archives |
+| `dados/courses.txt`, `dados/itens.txt` | Course and shop-item tables, generated from the client's information |
 | `dados/users.json` | Accounts. Created on first run if it is not there |
 
 ---
@@ -339,10 +338,8 @@ default**; nothing is written to another process.
 ### Repacking the client's `.pak` archives
 
 The game keeps its data — the song catalogue, the shop stock, the icons — in `XIP2` archives.
-**reXIP** reads *and writes* them, so a data file can be edited and handed back
+**[reXIP](https://github.com/MDashK/reXIP)** reads *and writes* them, so a data file can be edited and handed back
 to the client.
-
-For this purpose, you can use the [reXIP](https://github.com/MDashK/reXIP) tool.
 
 GrooveServer has reXIP integrated, so the same commands are
 also reachable through the server as `GrooveServer.exe pak ...`, sharing the same code.
