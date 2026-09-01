@@ -120,9 +120,9 @@ with micro-transactions:
 - It is also the one that the private online server uses.
 - **English PAK** is already present in the ZIP.
 
-| Mirror 1 | Mirror 2 | Mirror 3 |
-|---|---|---|
-| [IceDrive](https://icedrive.net/s/NgT7f5jVhVhxiAFT25zRV6kvi2fT)  | [Google Drive](https://drive.google.com/file/d/1g8IN3tHSsWIt9_Ab5Ne3SgxGUPEa0Ygy/view) | [Mega](https://mega.nz/file/sp8xnTqb#iHTkyuGTkfoKo5K4DgbjP19Cz1swOAZIhLqQa9D7CXE)
+| Mirror 1 | Mirror 2 | Mirror 3 | Mirror 4 |
+|---|---|---|---|
+| [IceDrive](https://icedrive.net/s/NgT7f5jVhVhxiAFT25zRV6kvi2fT)  | [Google Drive](https://drive.google.com/file/d/1g8IN3tHSsWIt9_Ab5Ne3SgxGUPEa0Ygy/view) | [Mega](https://mega.nz/file/sp8xnTqb#iHTkyuGTkfoKo5K4DgbjP19Cz1swOAZIhLqQa9D7CXE) | [Archive.org](https://archive.org/download/djmax-online-grooveserver)
 
 
 **For the older clients below, please also check the [Compatibility with other older client versions](#Compatibility-with-other-older-client-versions) section.**
@@ -134,9 +134,9 @@ with micro-transactions:
 - Has less courses than the above client: You must start GrooveServer with the "--courses 43" argument so that the client doesn't crash.
 - **English PAK** is already present in the ZIP.
 
-| Mirror 1 | Mirror 2 |
-|---|---|
-| [Mega](https://mega.nz/file/pgdgEY5K#vMTgHp5XoRNTF0KGUilWuMKoBO9qbQ1cEWlyhmE-vJQ)  | [IceDrive](https://icedrive.net/s/tNC5wZYXN1TGuw4wVNZ8ji1vaTXD) | 
+| Mirror 1 | Mirror 2 | Mirror 3 |
+|---|---|---|
+| [Mega](https://mega.nz/file/pgdgEY5K#vMTgHp5XoRNTF0KGUilWuMKoBO9qbQ1cEWlyhmE-vJQ)  | [IceDrive](https://icedrive.net/s/tNC5wZYXN1TGuw4wVNZ8ji1vaTXD) | [Archive.org](https://archive.org/download/djmax-online-grooveserver)
 
 **DJMax Online SNDA v2.50 / v2.60**
 - Compared to the above clients, it only has a few musics.
@@ -144,9 +144,9 @@ with micro-transactions:
 - No Course mode
 - The custom PAK present in the ZIP only has the IP address redirected. NO ENGLISH TRANSLATION. EVERYTHING STOCK.
 
-| v2.50 | v2.60 |
-|---|---|
-| [Mega](https://mega.nz/file/oh9gBbYQ#11iEx0VHnUPx_KVgyVchkfQn42Fp-LtXtzMWG4AJRzU)  | [Mega](https://mega.nz/file/Ih1EnZZJ#_Nai5iIWkTDcEdOnm8oeuu_oZnjfQVilkrQF2-KnZQY) | 
+| v2.50 | v2.60 | Both |
+|---|---|---|
+| [Mega](https://mega.nz/file/oh9gBbYQ#11iEx0VHnUPx_KVgyVchkfQn42Fp-LtXtzMWG4AJRzU)  | [Mega](https://mega.nz/file/Ih1EnZZJ#_Nai5iIWkTDcEdOnm8oeuu_oZnjfQVilkrQF2-KnZQY) | [Archive.org](https://archive.org/download/djmax-online-grooveserver)
 
 **HOLD "CTRL" KEY AT START-UP TO ACCESS THE SETTINGS WINDOW.**
 
